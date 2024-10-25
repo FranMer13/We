@@ -1,0 +1,108 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.cabeceraPerfil .fotoPerfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid brown;
+}
+
+.nombre {
+    font-size: 2rem;
+    margin: 0;
+    font-family: monospace;
+}
+
+.profesion {
+    color: darkred;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.descripcion {
+    font-size: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.descripcion a {
+    color: darkred;
+    text-decoration: none;
+}
+
+.links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.links img:hover {
+    transform: scale(1.2);
+}
+
+.botonesAbajo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+.boton {
+    background-color: transparent;
+    border: 2px solid darkred;
+    color: darkred;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: darkred;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .botonesAbajo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .perfil {
+        padding: 20px;
+    }
+}
